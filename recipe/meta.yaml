@@ -1,5 +1,5 @@
 {% set name = "yamale" %}
-{% set version = "2.0.1" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ac7dbb7b01c9fc61a5954d61fc6deb66b177c1f84146925add92dc0fa2b7e4c3
+  sha256: 11758648080820a7cc3ab1b679cc88e5a37ab1a73c55202341c316eeb5e63274
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
     - yamale = yamale.command_line:main
@@ -35,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'A schema and validator for YAML.'
+  summary: A schema and validator for YAML.
   description: |
     A schema and validator for YAML.
   doc_url: https://github.com/23andMe/Yamale

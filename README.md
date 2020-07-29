@@ -5,7 +5,7 @@ Home: https://github.com/23andMe/Yamale
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A schema and validator for YAML.
 

@@ -1,5 +1,5 @@
 {% set name = "yamale" %}
-{% set version = "3.0.1" %}
+{% set version = "3.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fc27f7407ae9e723fa006359671940887948a5d10d3b88266a1ba9fba26ade5e
+  sha256: af12b4c8acbb196515e0b8384debc4736159b75ea1b255daeebf8109ce5a3e14
 
 build:
   number: 0

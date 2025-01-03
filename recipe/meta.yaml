@@ -1,5 +1,5 @@
 {% set name = "yamale" %}
-{% set version = "5.2.1" %}
+{% set version = "5.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 19bbe713d588f07177bc519a46070c0793ed126ea37f425a76055b99703f835a
+  sha256: 68af23b6155f496fb11c831a504eb9f9a474a997a8571d6f249dc044e6a65af3
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
